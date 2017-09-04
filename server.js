@@ -4,7 +4,8 @@ var http = require('http').createServer(app);
 
 app.get('/', function(req, res){
 
-    res.send("ok");
+    res.send(process.env.CLEARDB_DATABASE_URL);
+    
 });
 
 
